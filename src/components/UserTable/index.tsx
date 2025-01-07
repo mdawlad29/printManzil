@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Pagination from "./Pagination";
 import DataTable from "./DataTable";
+import Heading from "../shared/Heading";
 
 interface IUser {
   id: number;
@@ -72,11 +73,9 @@ const UserTable = () => {
 
   return (
     <>
-      <h1 className="mb-3 text-lg font-semibold text-pink-600">
-        Task One: User Table
-      </h1>
+      <Heading title="Task One: User Data Table" />
 
-      <div className="p-6 bg-gray-900 min-h-screen text-white rounded-lg">
+      <div className="p-6 bg-gray-900 min-h-screen text-white rounded-lg mb-20">
         <div className="mb-4">
           <input
             type="text"
